@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII to Byte Array Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+            font-size: 16px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: left;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ASCII to Byte Array Converter</h2>
+    <textarea id="asciiInput" placeholder="Enter ASCII text here..."></textarea>
+    <br>
+    <button onclick="convertToByteArray()">Convert</button>
+    <button onclick="copyToClipboard()">Copy</button>
+    <br><br>
+    <h3>Byte Array Output:</h3>
+    <pre id="byteOutput">[]</pre>
+
+    <script>
+        function convertToByteArray() {
+            const inputText = document.getElementById('asciiInput').value;
+            const byteArray = Array.from(inputText, char => '0x' + char.charCodeAt(0).toString(16).padStart(2, '0'));
+
+            document.getElementById('byteOutput').textContent = `new Uint8Array([${byteArray.join(', ')}]);`;
+        }
+
+        function copyToClipboard() {
+            const textToCopy = document.getElementById('byteOutput').textContent;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Copied to clipboard!");
+            }).catch(err => {
+                alert("Failed to copy.");
+                console.error(err);
+            });
+        }
+    </script>
+
+</body>
+</html>

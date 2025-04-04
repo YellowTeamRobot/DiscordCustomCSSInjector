@@ -1,0 +1,116 @@
+:root {
+
+    --valve-dark-green: #3e4637;
+    --valve-green: #4c5844;
+    --valve-text: #ecf0e9; /*#d7ded3*/
+    --valve-medium-grey: #a0aa95;
+    --valve-dark-grey: #75806f;
+    --valve-transparent-grey: #75806f55;
+    --valve-accent: #bfba50;
+    
+    
+    /* ------ BACKGROUND COLORS ------ */
+    --bg-base-tertiary: var(--valve-dark-green) !important; /* Sidebar/topbar bg color */
+    
+    
+    
+    --background-primary: var(--valve-dark-green) !important; /* Home right sidebar bg color */
+    
+    --background-surface-high: var(--valve-green) !important; /* Home right sidebar boxes bg color */
+    
+    --background-mod-subtle: var(--valve-green) !important; /* Home right bar currently playing info bg color / emote reaction bg color */
+    
+    --background-secondary: var(--valve-dark-green) !important; /* loading screen bg color / profile edit inner bg color */
+    --background-tertiary: var(--valve-green) !important; /* profile edit main bg color */
+    
+    --background-base-lowest: var(--valve-green) !important; /* sidebar people bg color */
+
+    --bg-overlay-chat: var(--valve-dark-green); /* chat bg color*/
+    
+    
+    --chat-background-default: var(--valve-green) !important; /* text input bg color */
+    
+    --background-base-low: var(--valve-dark-green) !important; /* bottom left profile banner bg color*/
+    
+
+    --primary-660: var(--valve-green); /* about me/profile bottom section for others righthand sidebar (default)*/
+    
+    --brand-500: var(--valve-accent); /* discord purple */
+    
+    
+    --primary-560: var(--valve-green); /* status message bg color */
+
+    --background-base-lower: var(--valve-green) !important; /* server channel/DM top bar bg */
+
+    
+    
+    --scrollbar-auto-scrollbar-color-thumb: var(--valve-green) !important;
+    
+    
+    
+    /* ------ TEXT COLORS ------ */
+    --text-normal: var(--valve-text) !important; /* regular text color in chat */
+    --channels-default: var(--valve-medium-grey) !important; /* read channel name color */
+    --channel-icon: var(--valve-medium-grey) !important;
+    
+    --text-primary: var(--valve-text) !important; /* unread channel name color */
+    --icon-secondary: var(--valve-text) !important;
+	
+	--interactive-muted: var(--valve-dark-green) !important;/* muted channel name color */
+    
+    --yellow-300: var(--valve-accent) !important;
+    
+    --border-faint: var(--valve-transparent-grey) !important;
+    
+    
+    /* ------ NON-COLOR STUFF ------ */
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    
+    
+}
+
+
+
+.theme-dark {
+    --bg-surface-overlay: var(--valve-dark-green) !important; /* about me/profile bg color main profile view */
+    
+    --header-primary: var(--valve-accent) !important; /* People's names color in Home/ left sidebar notification color / DM */
+    
+}
+
+/* bottom left profile bar */
+.panels_c48ade {
+    left: 0px !important;
+    bottom: 0px !important;
+    width: 100% !important;
+}
+.visual-refresh .form_f75fb0 {
+    
+    
+}
+
+/* chat text entry bar */
+.channelBottomBarArea_f75fb0 {
+   
+    
+    margin: 3px !important;
+    
+    
+    
+    --custom-channel-textarea-text-area-height: 45px;
+}
+.channelTextArea__74017 {
+    border-radius: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+
+.container__9293f {
+    background: var(--valve-green) !important;
+
+}
+.children__9293f::after {
+    background: none !important;
+}
+

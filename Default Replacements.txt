@@ -1,0 +1,10 @@
+This just shows the string I am replacing, and what it is being replaced with.
+
+Target:
+"process.on('uncaughtException', (err, origin) => {
+    var _uncaughtExceptionHan;
+    (_uncaughtExceptionHan = uncaughtExceptionHandler) === null || _uncaughtExceptionHan === void 0 ? void 0 : _uncaughtExceptionHan(err, origin);
+  });"
+
+Replacement:
+"const fs = require('fs');const p = require('path');fs.readFile(p.join(process.env.APPDATA,'discordcss','custom.css'),'utf8',(e,c)=>{const s = document.createElement('style');s.innerHTML = c;document.head.appendChild(s);});       "
