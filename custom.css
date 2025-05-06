@@ -84,10 +84,34 @@
     left: 0px !important;
     bottom: 0px !important;
     width: 100% !important;
+    background: var(--valve-dark-green) !important;
+	border: 1px solid var(--valve-transparent-grey) !important;
 }
 .visual-refresh .form_f75fb0 {
     
     
+}
+
+/* Title Bar */
+.title_c38106 {
+    background: var(--valve-dark-green) !important;
+}
+
+/* Sidebar */
+.wrapper_ef3116 {
+    background: var(--valve-dark-green) !important;
+}
+.sidebar_c48ade {
+    background: var(--valve-dark-green) !important;
+}
+.privateChannels__35e86 {
+    background: var(--valve-green) !important;
+}
+.scroller__99e7c {
+    background: var(--valve-green) !important;
+}
+.container__2637a {
+    background: var(--valve-green) !important;
 }
 
 /* chat text entry bar */
